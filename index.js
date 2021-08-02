@@ -1,5 +1,7 @@
-var outside
-let fetchURL = 'https://api.unsplash.com/photos?page=1&per_page=25&client_id=0HexvSXsxFNjKOsv5IC-7OV_XZRODiDbLOJzPHRdfZI';
+let pageCount =1
+let postCount=1
+const getPost=()=>{
+    let fetchURL = `https://api.unsplash.com/photos?page=${pageCount}&per_page=8&client_id=0HexvSXsxFNjKOsv5IC-7OV_XZRODiDbLOJzPHRdfZI`;
 var Imageurls=[]
 let myheaders = {
   
@@ -19,11 +21,11 @@ let myheaders = {
         var card =document.createElement('div')
         card.classList.add("card");
         var image =document.createElement('img')
-        // image.src = item.urls.raw;
+        image.src = item.urls.raw;
       
       
         
-        card.innerHTML =i+1
+        // card.innerHTML =postCount++
       
         imageCards.appendChild(card)
         card.appendChild(image)
@@ -35,10 +37,28 @@ let myheaders = {
     
  
   })
+}
+
+getPost()
+
+  window.addEventListener('scroll',()=>{
+      const {scrollHeight,scrollTop,clientHeight}=document.documentElement;
+
+      console.log(scrollTop+clientHeight,scrollHeight)
+      if(scrollTop+clientHeight>=(scrollHeight-1)){
+          console.log("I am at Bottom")
+          showData()
+      }
+  })
 
 
 
-
+  const showData=()=>{
+      setTimeout(()=>{
+          pageCount++;
+          getPost()
+      },300)
+  }
  
 
 

@@ -6,8 +6,9 @@ body{
 
 .card{
  
-    background-color: red;
+    /* background-color: red; */
     height: 300px;
+    
    
 }
 .images_cards{
@@ -15,10 +16,14 @@ body{
     
     display: grid;
     margin: auto;
-    gap: 5%;
-    grid-template-columns: 20% 20% 20% 20%;
+    /* gap: 5%; */
+    grid-template-columns: 25% 25% 25% 25%;
 }
 .card>img{
     width: 100%;
     margin: auto;
+}
+
+.container_images{
+    margin-top: -5rem;
 }
