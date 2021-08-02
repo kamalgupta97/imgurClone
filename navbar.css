@@ -1,7 +1,87 @@
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100% !important;
-    height: 10px;
-    background-color: aqua;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 100%;
+    font-family: Proxima Nova Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #2e3035;
+}
+
+.container{
+    height: 400px;
+    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+}
+
+
+.navbar{
+    display: flex;
+ 
+   
+}
+
+.logo img{
+    width: 90px;
+    position: relative;
+    top: -10px;
+    margin-left: 20px;
+}
+.button_upload{
+    margin: 15px;
+    background-color: #1bb76e;
+    position: relative;
+    width: 120px;
+    box-shadow: 0 6px 10px 0 rgb(27 28 30 / 31%);
+    height: 30px;
+    border-radius: 3px;
+    padding: 2px;
+}
+.button_upload img{
+    margin: 5px;
+}
+.button_upload span{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.searchbar{
+    width: 40%;
+    margin: 15px;
+    margin-left: 10%;
+}
+.searchbar input{
+width: 100%;
+padding: 10px 10px;
+border-radius: 3px;
+outline: none;
+border: 0px;
+background-color: #46446A;
+font-size: 16px;
+color: white;
+}
+
+.ad_free{
+    margin: 0px 20px;
+}
+.ad_free p{
+    margin: 15px;
+    background-color: #6432F9;
+   padding: 10px;
+   color: white;
+   box-shadow: 0 6px 10px 0 rgb(27 28 30 / 31%);
+   font-weight: 600;
+   border-radius: 3px;
+}
+.comments,.chat,.notifination{
+    margin: 15px 5px;
+}
+
+.profile img{
+    margin: 15px;
+    width: 40px;
+    border-radius: 50%;
 }
