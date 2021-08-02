@@ -7,7 +7,7 @@ body{
 .card{
  
     /* background-color: red; */
-    height: 300px;
+ 
     
    
 }
@@ -16,9 +16,11 @@ body{
     
     display: grid;
     margin: auto;
-    /* gap: 5%; */
-    grid-template-columns: 25% 25% 25% 25%;
-}
+    gap: 1.33%;
+    grid-template-columns: 24% 24% 24% 24%;
+
+
+}   
 .card>img{
     width: 100%;
     margin: auto;
